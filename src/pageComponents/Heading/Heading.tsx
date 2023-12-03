@@ -14,7 +14,7 @@ const Heading = () => {
 
   return (
     <div className='h-80 md:h-[28rem]'>
-      <div className='flex h-full bg-amber-100 px-4 md:px-0'>
+      <div className='flex h-full bg-slate-100 px-4 md:px-0'>
         <div className='w-full md:w-6/12 md:px-4 md:py-2'>
           <img className='w-20 h-20' src={Logo} alt='logo' />
 

@@ -9,10 +9,10 @@ const App = () => {
   const { isLoading } = useContext(BookContext);
 
   return (
-    <div className='bg-slate-50'>
+    <div className={`${isLoading ? 'pointer-events-none' : ''} bg-slate-50`}>
       {/* Show the list of books  */}
       {isLoading && (
-        <div className='flex justify-center items-center w-full h-full bg-black/[.09] fixed pointer-events-none z-50'>
+        <div className='flex justify-center items-center w-full h-full bg-black/[.09] fixed z-50'>
           <Loading />
         </div>
       )}

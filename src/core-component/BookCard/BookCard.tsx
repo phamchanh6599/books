@@ -29,9 +29,9 @@ const BookCard = ({
 
       {/* Content */}
       <div>
-        <div className='font-semibold text-lg'>{title}</div>
-        <div className='text-zinc-400'>{author}</div>
-        <div className='text-zinc-400 truncate'>{publishYears}</div>
+        <div className='font-semibold text-lg line-clamp-2'>{title}</div>
+        <div className='text-zinc-400 line-clamp-2'>{author}</div>
+        <div className='text-zinc-400 line-clamp-2'>{publishYears}</div>
       </div>
     </div>
   );

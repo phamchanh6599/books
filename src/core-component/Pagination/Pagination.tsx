@@ -19,8 +19,6 @@ const Pagination = ({
   onClickPage,
   totalPages,
 }: IPagination) => {
-  const numberOfItem = limit * page;
-
   return (
     <div className='flex items-center justify-between bg-white'>
       <div className='flex flex-1 justify-between sm:hidden'>
@@ -38,7 +36,7 @@ const Pagination = ({
 
       <div className='hidden sm:flex sm:flex-1 sm:items-center sm:justify-between'>
         <p className='text-sm text-gray-700'>
-          Showing <span className='font-medium'> {numberOfItem} </span>of{' '}
+          Showing <span className='font-medium'> {limit} </span>of{' '}
           <span className='font-medium'> {total} </span> results
         </p>
 
@@ -50,6 +48,7 @@ const Pagination = ({
           pageCount={totalPages}
           previousLabel='<'
           renderOnZeroPageCount={null}
+          forcePage={page - 1}
           containerClassName={
             'isolate inline-flex -space-x-px rounded-md shadow-sm'
           }
