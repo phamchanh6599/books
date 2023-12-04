@@ -18,7 +18,9 @@
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run in the root:
+### `npm install`
+To install the packages that needed for the application
 
 ### `npm run start`
 
